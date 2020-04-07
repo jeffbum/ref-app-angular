@@ -1,0 +1,9 @@
+<p>modal works!</p>
+<h1 mat-dialog-title>modal works! {{ data.name }}</h1>
+<div mat-dialog-content>
+  <a href="http://www.corner-enviro.com/loginscript_new.php?f=1e6110471fefc0f61f325bc9236e149f" (click)="onNoClick()">What's your favorite color?</a>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()" target="_blank">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.color" cdkFocusInitial>Ok</button>
+</div>
